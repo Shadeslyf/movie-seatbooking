@@ -1,0 +1,94 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    perspective: 200px;
+}
+
+.screen {
+    margin: auto;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 448px;
+    transform: rotateX(349deg);
+}
+
+.movieList, .bill {
+    text-align: center;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.seat {
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.seat:nth-of-type(4) {
+    margin-right: 30px;
+}
+
+.seat:nth-of-type(14) {
+    margin-right: 30px;
+}
+
+.row:nth-of-type(4) {
+    margin-bottom: 40px;
+}
+
+.row:nth-of-type(8) {
+    margin-bottom: 40px;
+}
+
+.booked {
+    background-color: grey;
+}
+
+.selected {
+    background-color: green;
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .screen {
+        height: 150px;
+        width: 748px;
+    }
+
+    .seat {
+        width: 35px;
+        height: 35px;
+
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .screen {
+        height: 90px;
+        width: 300px;
+    }
+
+    .seat {
+        width: 17px;
+        height: 17px;
+        margin-top: 5px;
+        margin-left: 5px;
+
+    }
+
+}
